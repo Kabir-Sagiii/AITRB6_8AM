@@ -6,10 +6,8 @@ import "./App.css";
 function App() {
   return (
     <div className="app">
-      <Counter />
-
       <ImageComp />
-
+      <Counter />
       {/* <h2>App Component</h2> */}
       {/* <Header /> */}
     </div>
