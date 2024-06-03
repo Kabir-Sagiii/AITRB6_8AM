@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      p {
+        font-weight: bolder;
+      }
+    </style>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      function CreateUI(props) {
+        return (
+          <div>
+            <img src={props.url} width="70" height="70" />
+            <p>{props.title} </p>
+          </div>
+        );
+      }
+
+      function App() {
+        const containerStyle = {
+          display: "flex",
+          justifyContent: "space-evenly",
+        };
+        return (
+          <div style={containerStyle}>
+            <CreateUI
+              url="https://rukminim2.flixcart.com/flap/96/96/image/29327f40e9c4d26b.png?q=100"
+              title="Grocery"
+            />
+            <CreateUI
+              url="https://rukminim2.flixcart.com/flap/96/96/image/22fddf3c7da4c4f4.png?q=100"
+              title="Mobiles"
+            />
+            <CreateUI
+              url="https://rukminim2.flixcart.com/fk-p-flap/100/100/image/7a5c9b23fa14cfd3.jpg?q=50"
+              title="Fashion"
+            />
+            <CreateUI
+              url="https://rukminim2.flixcart.com/flap/96/96/image/71050627a56b4693.png?q=100"
+              title="Travel"
+            />
+            <CreateUI
+              url="https://rukminim2.flixcart.com/flap/96/96/image/29327f40e9c4d26b.png?q=100"
+              title="Grocery"
+            />
+            <CreateUI
+              url="https://rukminim2.flixcart.com/flap/96/96/image/22fddf3c7da4c4f4.png?q=100"
+              title="Mobiles"
+            />
+            <CreateUI
+              url="https://rukminim2.flixcart.com/fk-p-flap/100/100/image/7a5c9b23fa14cfd3.jpg?q=50"
+              title="Fashion"
+            />
+            <CreateUI
+              url="https://rukminim2.flixcart.com/flap/96/96/image/71050627a56b4693.png?q=100"
+              title="Travel"
+            />
+          </div>
+        );
+      }
+
+      ReactDOM.render(<App />, document.getElementById("root"));
+    </script>
+  </body>
+</html>

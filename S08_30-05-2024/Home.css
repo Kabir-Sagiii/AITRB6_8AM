@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+}
+
+.header {
+  background-color: black;
+  height: 80px;
+  color: white;
+  display: flex;
+}
+.leftPanel {
+  width: 40%;
+}
+.rightPanel {
+  width: 60%;
+}
+.rightPanel a {
+  color: white;
+  text-decoration: none;
+  margin-right: 50px;
+}
+.main {
+  background-color: lightgray;
+  padding: 50px 20px;
+}
+.footer {
+  background-color: rgb(24, 18, 18);
+  color: white;
+  padding: 50px;
+}
+.footer a {
+  color: rgb(222, 223, 229);
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.flexContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  box-shadow: 0 0 10px green;
+  padding: 10px;
+  width: 270px;
+  height: 400px;
+}
+.cardContainer {
+  display: flex;
+  justify-content: space-evenly;
+}
+.card h3,
+p {
+  margin: 15px 0px;
+}

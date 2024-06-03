@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .card {
+        box-shadow: 0 0 10px green;
+        padding: 10px;
+        width: 270px;
+        height: 400px;
+      }
+      #cardContainer {
+        display: flex;
+        justify-content: space-evenly;
+      }
+    </style>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      var imageUrl =
+        "https://www.crushpixel.com/big-static7/preview4/portrait-young-professional-man-suit-258742.jpg";
+
+      let card = (
+        <div class="card">
+          <img src={imageUrl} width="100%" height="250" />
+          <h3>Chris John </h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <button>Profile Details </button>
+        </div>
+      );
+
+      let container = (
+        <div id="cardContainer">
+          {card}
+          {card}
+          {card}
+          {card}
+        </div>
+      );
+
+      ReactDOM.render(container, document.getElementById("root"));
+    </script>
+  </body>
+</html>

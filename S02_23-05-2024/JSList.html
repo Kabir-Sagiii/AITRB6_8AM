@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>List using JS</title>
+  </head>
+  <body>
+    <h2>List in Javascript</h2>
+    <script>
+      function createList() {
+        var olDomElement = document.createElement("ol"); //<ol> </ol>
+
+        var liDomElement1 = document.createElement("li");
+        var liDomElement2 = document.createElement("li");
+        var liDomElement3 = document.createElement("li");
+        var liDomElement4 = document.createElement("li");
+
+        olDomElement.appendChild(liDomElement1); //<ol><li></li></ol>
+        olDomElement.appendChild(liDomElement2);
+        olDomElement.appendChild(liDomElement3);
+        olDomElement.appendChild(liDomElement4);
+
+        liDomElement1.innerText = "Apple"; //<li>Apple</li>
+        liDomElement2.innerText = "Samsung";
+        liDomElement3.innerText = "Vivo";
+        liDomElement4.innerText = "OnePlus";
+
+        //Add OrderedList with ListItems in the DOM
+        document.querySelector("body").appendChild(olDomElement);
+      }
+
+      createList();
+      createList();
+      createList();
+      createList();
+      createList();
+      createList();
+    </script>
+  </body>
+</html>

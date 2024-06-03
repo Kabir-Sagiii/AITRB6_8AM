@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #container {
+        box-shadow: 0 0 10px red;
+        margin-bottom: 30px;
+        padding: 10px;
+        width: 1200px;
+      }
+    </style>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="coreelement"></div>
+
+    <script type="text/babel">
+      //   function createContainer(title) {
+      //     return (
+      //       <div id="container">
+      //         <h2>{title} </h2>
+      //         <p>
+      //           Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+      //           Consectetur quos adipisci quis exercitationem, doloremque
+      //           accusamus. Maxime fugiat dolore ipsa quaerat! Vero placeat
+      //           architecto dolores? Sit dignissimos soluta eum odio amet sequi,
+      //           quidem aperiam eveniet obcaecati laborum aliquam quae! Voluptate
+      //           facilis ipsa doloremque vel natus inventore blanditiis rem eos
+      //           omnis totam, saepe reiciendis iusto corrupti dolores atque
+      //           assumenda dicta accusantium molestias aliquam. Ut, non similique
+      //           sed delectus voluptatum veniam nulla. Laborum iste adipisci
+      //           veniam! Eum fugiat recusandae repudiandae similique dolore
+      //           adipisci inventore fugit magnam explicabo molestiae eligendi,
+      //           ipsum culpa! Cum atque cupiditate maiores quos nesciunt earum
+      //           ducimus repellat delectus. Voluptates dolor ipsam a? Cumque
+      //           dignissimos quae unde ratione vitae temporibus in doloremque
+      //           reiciendis odit sit saepe beatae, facere qui, adipisci rem? Ipsum,
+      //           vitae, placeat ab quis qui doloremque aliquam non fugiat neque
+      //           perspiciatis consequuntur eum sit! Voluptatum eius accusantium
+      //           veritatis dolorum voluptate consequatur minus dicta, officia unde
+      //           architecto et minima beatae.
+      //         </p>
+      //         <button>More Details </button>
+      //       </div>
+      //     );
+      //   }
+
+      //   function multipleContainer() {
+      //     return (
+      //       <div>
+      //         {createContainer("React JS")}
+      //         {createContainer("Angular 18")}
+      //         {createContainer("Node JS")}
+      //       </div>
+      //     );
+      //   }
+
+      function CreateContainer() {
+        return (
+          <div id="container">
+            <h2>React JS </h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Consectetur quos adipisci quis exercitationem, doloremque
+              accusamus. Maxime fugiat dolore ipsa quaerat! Vero placeat
+              architecto dolores? Sit dignissimos soluta eum odio amet sequi,
+              quidem aperiam eveniet obcaecati laborum aliquam quae! Voluptate
+              facilis ipsa doloremque vel natus inventore blanditiis rem eos
+              omnis totam, saepe reiciendis iusto corrupti dolores atque
+              assumenda dicta accusantium molestias aliquam. Ut, non similique
+              sed delectus voluptatum veniam nulla. Laborum iste adipisci
+              veniam! Eum fugiat recusandae repudiandae similique dolore
+              adipisci inventore fugit magnam explicabo molestiae eligendi,
+              ipsum culpa! Cum atque cupiditate maiores quos nesciunt earum
+              ducimus repellat delectus. Voluptates dolor ipsam a? Cumque
+              dignissimos quae unde ratione vitae temporibus in doloremque
+              reiciendis odit sit saepe beatae, facere qui, adipisci rem? Ipsum,
+              vitae, placeat ab quis qui doloremque aliquam non fugiat neque
+              perspiciatis consequuntur eum sit! Voluptatum eius accusantium
+              veritatis dolorum voluptate consequatur minus dicta, officia unde
+              architecto et minima beatae.
+            </p>
+            <button>More Details </button>
+          </div>
+        );
+      }
+
+      function MultipleContainer() {
+        return (
+          <div>
+            <CreateContainer />
+            <CreateContainer />
+            <CreateContainer />
+          </div>
+        );
+      }
+
+      ReactDOM.render(
+        <MultipleContainer />,
+        document.getElementById("coreelement")
+      );
+    </script>
+  </body>
+</html>

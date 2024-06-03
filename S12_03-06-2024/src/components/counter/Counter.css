@@ -1,0 +1,15 @@
+.counter {
+  width: 500px;
+  box-shadow: 0 0 10px red;
+  margin: 50px auto;
+  padding: 30px;
+}
+.counter h2 {
+  font-size: 37px;
+}
+.counter p {
+  font-size: 21px;
+  font-style: italic;
+  font-weight: bold;
+  color: green;
+}

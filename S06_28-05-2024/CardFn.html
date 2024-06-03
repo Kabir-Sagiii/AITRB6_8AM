@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .card {
+        box-shadow: 0 0 10px green;
+        padding: 10px;
+        width: 270px;
+        height: 400px;
+      }
+      #cardContainer {
+        display: flex;
+        justify-content: space-evenly;
+      }
+    </style>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      function createCard(name, imageurl) {
+        // JSX code to create a Card
+
+        return (
+          <div class="card">
+            <img src={imageurl} width="100%" height="250" />
+            <h3> {name} </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <button>Profile Details </button>
+          </div>
+        );
+      }
+
+      function multipleCard() {
+        return (
+          <div id="cardContainer">
+            {createCard(
+              "rohan vemra",
+              "https://www.crushpixel.com/big-static7/preview4/portrait-young-professional-man-suit-258742.jpg"
+            )}
+            {createCard(
+              "riya sharma",
+              "https://i.pinimg.com/originals/e6/78/4b/e6784b9cd722d02e014d7e60ebe25e39.jpg"
+            )}
+            {createCard(
+              "ajay sadguru",
+              "https://th.bing.com/th/id/OIP.kLuVl7_2soHqjgecM56X2AHaLL?rs=1&pid=ImgDetMain"
+            )}
+            {createCard(
+              "siddharath patel",
+              "https://i.pinimg.com/originals/97/31/02/9731022f0be7c965e880505461643850.jpg"
+            )}
+          </div>
+        );
+      }
+
+      ReactDOM.render(multipleCard(), document.getElementById("root"));
+    </script>
+  </body>
+</html>

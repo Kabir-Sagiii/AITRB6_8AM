@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Button in React</title>
+
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  </head>
+  <body id="body">
+    <script>
+      //Here we will write React Code
+
+      var buttonReactElement = React.createElement(
+        "button",
+        {},
+        "React Button"
+      );
+      //<button>React Button  </button>
+
+      ReactDOM.render(buttonReactElement, document.getElementById("body"));
+    </script>
+  </body>
+</html>
