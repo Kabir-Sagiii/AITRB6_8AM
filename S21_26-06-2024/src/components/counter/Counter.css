@@ -1,0 +1,18 @@
+.counter {
+  width: 500px;
+  box-shadow: 0 0 10px red;
+  margin: 100px auto;
+  padding: 70px;
+  text-align: center;
+}
+.counter h2 {
+  font-size: 37px;
+  margin-bottom: 17px;
+}
+.counter p {
+  font-size: 21px;
+  margin-bottom: 10px;
+  font-style: italic;
+  font-weight: bold;
+  color: green;
+}
