@@ -1,0 +1,11 @@
+.reducerCounter {
+  padding: 50px;
+  text-align: center;
+  color: green;
+}
+.reducerCounter h2 {
+  margin-bottom: 20px;
+}
+.reducerCounter button {
+  margin-right: 10px;
+}
