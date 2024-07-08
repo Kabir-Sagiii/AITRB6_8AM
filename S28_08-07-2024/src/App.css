@@ -1,0 +1,9 @@
+.app {
+  /* text-align: center; */
+  /* font-size: 42px; */
+}
+.subAppContainer {
+  width: 800px;
+  display: flex;
+  justify-content: space-evenly;
+}
