@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+}
+.nav {
+  background-color: black;
+  height: 70px;
+  color: white;
+  display: flex;
+}
+.leftPanel {
+  width: 40%;
+}
+.rightPanel {
+  width: 60%;
+}
+.rightPanel a {
+  color: white;
+  text-decoration: none;
+  margin-right: 50px;
+}
+.flexContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
