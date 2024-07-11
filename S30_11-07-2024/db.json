@@ -1,0 +1,27 @@
+{
+   "result":[
+    {
+        
+        "name":"s1",
+        "city":"c1"
+    },
+    {
+         "name":"s2",
+        "city":"c2"
+    },
+    {
+         "name":"s3",
+        "city":"c3"
+    },
+    {
+        "name":"s4",
+       "city":"c4"
+   },
+   {
+    "name":"s5",
+   "city":"c5"
+}
+
+   ]
+
+}
