@@ -29,7 +29,7 @@ function Users({ getUsers, users, setIsNewUser, setNewUser }) {
       </h2>
       {users.length > 0 && (
         <div style={{ margin: "30px auto", width: "500px" }}>
-          <table frame="box" rules="all" cellPadding="10" width={"100%"}>
+          <table className="table">
             <thead>
               <tr>
                 <th>Name</th>
@@ -37,7 +37,7 @@ function Users({ getUsers, users, setIsNewUser, setNewUser }) {
                 <th colSpan={2}>Action</th>
               </tr>
             </thead>
-            <tbody align="center">
+            <tbody>
               {users.map((element) => {
                 return (
                   <tr>
@@ -45,6 +45,7 @@ function Users({ getUsers, users, setIsNewUser, setNewUser }) {
                     <td>{element.city}</td>
                     <td>
                       <button
+                        className="btn btn-outline-success"
                         onClick={() => {
                           updateUser(element);
                           {
@@ -57,6 +58,7 @@ function Users({ getUsers, users, setIsNewUser, setNewUser }) {
                     </td>
                     <td>
                       <button
+                        className="btn btn-outline-danger"
                         onClick={() => {
                           deleteUser(element.id);
                         }}

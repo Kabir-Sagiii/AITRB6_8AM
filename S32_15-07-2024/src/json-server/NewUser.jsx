@@ -35,20 +35,21 @@ function NewUser({ getUsers, isNewUser, newuser, setNewUser, setIsNewUser }) {
       });
   };
   return (
-    <div style={{ padding: "50px" }}>
+    <div style={{ padding: "50px" }} className="shadow p-3 mt-5">
       <h2>{isNewUser ? "New User" : "Update User"}</h2>
       <input
+        className="form-control"
         value={newuser.name}
         onChange={(event) => {
           setNewUser({ ...newuser, name: event.target.value });
         }}
         type="text"
         placeholder="username"
-        style={{ margin: "10px 0px" }}
       />
       <br />
 
       <select
+        className="form-select"
         value={newuser.city}
         onChange={(event) => {
           setNewUser({ ...newuser, city: event.target.value });
@@ -62,8 +63,10 @@ function NewUser({ getUsers, isNewUser, newuser, setNewUser, setIsNewUser }) {
         <option>c5</option>
       </select>
       <br />
-      <br />
-      <button onClick={isNewUser ? addNewUser : updateUser}>
+      <button
+        className="btn btn-outline-primary"
+        onClick={isNewUser ? addNewUser : updateUser}
+      >
         {isNewUser ? "New User" : "Update User"}
       </button>
     </div>
