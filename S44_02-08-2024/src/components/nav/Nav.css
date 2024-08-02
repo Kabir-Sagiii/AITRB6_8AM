@@ -1,0 +1,26 @@
+.navContainer {
+  background-color: black;
+  color: white;
+  height: 73px;
+  display: flex;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+}
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  width: 60%;
+}
+.links a {
+  color: white;
+  margin-right: 50px;
+  text-decoration: none;
+  font-size: 19px;
+}
