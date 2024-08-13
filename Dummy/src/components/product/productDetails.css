@@ -1,0 +1,14 @@
+.productDetails {
+  display: flex;
+  width: 1000px;
+  margin: 50px auto;
+  /* box-shadow: 0 0 10px black; */
+  padding: 20px;
+}
+.productImagePanel {
+  width: 30%;
+}
+.productContentPanel {
+  width: 70%;
+  padding: 30px;
+}

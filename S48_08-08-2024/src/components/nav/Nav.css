@@ -1,0 +1,38 @@
+.navContainer {
+  background: linear-gradient(45deg, black, rgb(108, 27, 27), black);
+  color: white;
+  height: 73px;
+  display: flex;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+}
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 55%;
+}
+.thirdPanel {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 15%;
+}
+
+.links a,
+.thirdPanel a {
+  color: white;
+  margin-right: 50px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 500;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.icon {
+  font-size: 23px;
+}

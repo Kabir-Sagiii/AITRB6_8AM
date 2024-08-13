@@ -16,7 +16,8 @@ function Nav() {
     <div className="navContainer">
       <div className="title">
         <img
-          src="https://graphicsfamily.com/wp-content/uploads/edd/2021/08/E-Commerce-Logo-Design-scaled.jpg"
+          style={{ color: "white" }}
+          src="https://png.pngtree.com/png-clipart/20221001/original/pngtree-shopping-logo-design-for-online-store-website-png-image_8647300.png"
           width={270}
           height={70}
         />
@@ -27,8 +28,14 @@ function Nav() {
         {/* <Link to="/mens">Menswear</Link>
         <Link to="/womens">Womenswear</Link>
         <Link to="/kids">Kidswear</Link> */}
+        <Link to="/about">About</Link>
         <Link to="/carts">Cart</Link>
-        <button className="btn btn-outline-danger me-5" onClick={logout}>
+      </div>
+      <div className="thirdPanel">
+        <button
+          className="btn btn-outline-danger text-white fw-bold me-5"
+          onClick={logout}
+        >
           Logout
         </button>
       </div>

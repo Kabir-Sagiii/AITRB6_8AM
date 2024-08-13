@@ -1,5 +1,5 @@
 .navContainer {
-  background-color: black;
+  background: linear-gradient(45deg, rgb(13, 1, 1), rgb(81, 20, 20), black);
   color: white;
   height: 73px;
   display: flex;
@@ -14,13 +14,21 @@
 .links {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: flex-start;
 
-  width: 60%;
+  width: 40%;
+}
+.thirdPanel {
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 .links a {
   color: white;
   margin-right: 50px;
   text-decoration: none;
-  font-size: 19px;
+  font-size: 17px;
+  font-weight: 500;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
