@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* .bg-dark,
+.btn-dark {
+  background: linear-gradient(45deg, rgba(94, 25, 4, 0.652), black) !important;
+} */
+.btn {
+  color: white !important;
+}
+.btn-outline-success {
+  color: white;
+  background: linear-gradient(45deg, rgb(40, 70, 40), black) !important;
+}
